@@ -1,15 +1,19 @@
 ## How to execute the code?
 
 ## STEP 1
--- Create a virtual environment (.venv) in python
+-- Create a virtual environment (.venv).
 
 ## STEP 2
--- run "python app.py" in the terminal
+-- Use the terminal with .venv to execute "python app.py" without the "".
 
-# STEP 3
--- Create your own user by registering through the website
+## STEP 3
+-- Use localhost5000 at a browser to open the first page.
 
-# Test Data
+## **uncompleted** Test Data
 username: miles
 password: mojica
  Step 3 is empty
+
+## **completed** Test Data
+username: yae
+password: miko
