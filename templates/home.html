@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="{{url_for('home')}}" class="nav-link px-2 text-secondary">Home</a></li>
+          <li><a href="{{url_for('step1')}}" class="nav-link px-2 text-secondary">Edit</a></li>
+          <li><a href="{{url_for('logout')}}" class="nav-link px-2 text-secondary">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+<link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{url_for('static',filename='myfont/css/all.min.css')}}">
+<div class="jumbotron text-center">
+    <h1 class="text-success">Welcome: {{session["userName"]}}</h1>
+    <p class="lead">Your answers from your previous attempt are below</p>
+    <p>{{food}}</p>
+</div>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Your favorite food</th>
+            <th>Your favorite music</th>
+            <th>Two Truths and a Lie</th>      
+          </tr>
+                  </thead>
+                  <tbody>
+                    {% for item in records %}
+                  <tr>
+                    <td>{{item[2]}}</td>
+                    <td>{{item[3]}}</td>
+                    <td>{{item[4]}}</td>
+                  </tr>
+                    {% endfor %}
+                  </tbody>
+     </table>
+{% endblock %}
