@@ -8,3 +8,8 @@
 
 # STEP 3
 -- Create your own user by registering through the website
+
+# Test Data
+username: miles
+password: mojica
+ Step 3 is empty
