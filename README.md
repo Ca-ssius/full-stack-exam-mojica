@@ -5,3 +5,6 @@
 
 ## STEP 2
 -- run "python app.py" in the terminal
+
+# STEP 3
+-- Create your own user by registering through the website
