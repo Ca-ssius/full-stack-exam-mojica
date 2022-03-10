@@ -1,7 +1,7 @@
 ## How to execute the code?
 
 ## STEP 1
--- Create a virtual environment (.venv).
+-- Create a virtual environment (.venv) in python.
 
 ## STEP 2
 -- Use the terminal with .venv to execute "python app.py" without the "".
